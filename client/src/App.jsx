@@ -3,7 +3,7 @@ import { UserContextProvider } from "./UserContext";
 import Routes from "./Routes";
 
 const App = () => {
-  axios.defaults.baseURL = process.evn.REACT_APP_API_URL;
+  axios.defaults.baseURL = "http://localhost:3000";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
